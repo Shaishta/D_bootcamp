@@ -1,0 +1,152 @@
+.container1 {
+	display: grid;
+	width: 400px;
+	grid-gap: 15px;
+	border: 1px solid black;
+	grid-template-rows: 50px 50px 50px 50px;
+	grid-template-columns: 1fr 2fr;
+}
+.box1 {
+background-color: #ffbdde;
+border: 2px solid black;
+}
+
+.box2 {
+background-color: #00bfff;
+border: 2px solid black;
+}
+
+.box3 {
+	background-color: #ffbdde;
+border: 2px solid black;
+}
+
+.box4 {
+	background-color: #00bfff;
+border: 2px solid black;
+}
+
+.box5 {
+	background-color: #ffbdde;
+border: 2px solid black;
+}
+
+.box6 {
+	background-color: #00bfff;
+border: 2px solid black;
+}
+ .box7 {
+ 	background-color: #fcffa4;
+border: 2px solid black;
+grid-column: 1/span 2;
+grid-row: 4;
+ }
+
+.b1 { 
+	grid-area: header;
+	background-color: skyblue;
+}
+.b2 { 
+	grid-area: hero ;
+	background-color: purple; }
+.b3 { 
+	grid-area: main;
+	background-color: orangered;
+}
+.b4 { 
+	grid-area: sidebar;
+	background-color: darkseagreen;
+}
+.b5 { 
+	grid-area: extra;
+	background-color: lightslategrey;
+}
+.b6 { 
+	grid-area: images;
+	background-color: seagreen;
+}
+.b7 { 
+	grid-area: posts;
+	background-color: lightpink;
+}
+.b8 {
+	grid-area: footer;
+	background-color: lightgoldenrodyellow;
+}
+
+ .container2 {
+	display: grid;
+	border: 1px solid black;
+	grid-template-areas: 
+	'header header header'
+	'hero main main'
+	'hero main main'
+	'sidebar main main'
+	'sidebar extra extra'
+	'sidebar extra extra'
+	'images images posts'
+	'footer footer footer';
+	width: 500px;
+	height: 400px;
+	grid-gap: 10px;		
+}
+
+.container3 {
+	display: grid;
+	width: 400px;
+	grid-gap: 10px;
+	border: 1px solid black;
+	grid-template-rows: 50px 50px 50px 50px 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	color: white;
+}
+.bx1 {
+background-color: #9f4576;
+border: 2px solid black;
+grid-column: 1/span 3;
+grid-row: 1;
+}
+
+.bx2 {
+background-color: #8878c3;
+border: 2px solid black;
+grid-row: 2/ span 2;
+grid grid-column: 1;
+}
+
+.bx3 {
+	background-color: #a2a2d0;
+border: 2px solid black;
+}
+
+.bx4 {
+	background-color: #b0e0e6;
+border: 2px solid black;
+}
+
+.bx5 {
+	background-color: #dda0dd;
+border: 2px solid black;
+grid-row: 3;
+grid-column: 2 / span 2 ;
+}
+
+.bx6 {
+	background-color: #9f4576;
+border: 2px solid black;
+grid-row: 4;
+grid-column: 1/ span 2;
+}
+
+.bx7 {
+	background-color: #8878c3;
+border: 2px solid black;
+}
+ 
+ .bx8 {
+ 	background-color: #a2a2d0;
+border: 2px solid black;
+grid-column: 1/span 3;
+grid-row: 5;
+ }

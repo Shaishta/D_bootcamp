@@ -1,0 +1,29 @@
+body {
+	background: url(https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+}
+header {
+	text-align: left;
+	text-decoration: underline;
+	font-size: 5em;
+	color: palegreen;
+
+}
+.text {
+	 background-color: #D9FC99;
+  color: white;
+  border: 2px solid whitesmoke;
+  margin: 50px;
+  padding: 50px;
+}
+
+h2 {
+	text-align: center;
+	font-display: block;
+	font-style: italic;
+	font-family: 'Birthstone', cursive;
+	margin: ;
+}
+form {
+	text-align: center;
+}

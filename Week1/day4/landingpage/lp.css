@@ -1,0 +1,10 @@
+    
+.text-center {
+    text-align: center!important;
+    color: white;
+}
+@media (min-width: 768px)
+.col-md-8 {
+    flex: 0 0 auto;
+    /* width: 66.66666667%; */
+}

@@ -1,0 +1,42 @@
+/* Add a blue background color to the top navigation */
+.topnav {
+  background-color: #C7F2F2;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #006D00;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #00A8A8;
+  color: white;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  transition: all 1s;
+  float: left;
+  width: 20%;
+  padding: 3px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  transition: all 1s;
+}

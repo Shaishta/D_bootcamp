@@ -1,0 +1,34 @@
+body {
+	background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+}
+h1 {
+	font-family: 'Lobster', cursive;
+}
+
+p,ul,ol {font-family: Arial;
+}
+
+h3 {
+	font-family: 'Rampart One', cursive;
+	color: darkorange;
+}
+
+h4 {
+	font-family: 'Rampart One', cursive;
+}
+ol.A {
+	list-style-type: upper-roman;
+}
+
+.container {
+	text-align: center;
+}
+img:hover {
+	transition: all 1s;
+	transform: scale(1.1);
+}
+table, th, td {
+  border:1px solid black;
+  margin: 15px;
+  padding: 15px;
+}

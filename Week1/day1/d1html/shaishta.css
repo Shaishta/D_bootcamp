@@ -1,0 +1,36 @@
+body {
+	background: url(https://tse4.mm.bing.net/th?id=OIP.ta6ENyMqnVpfKkOYIQTbzQE8DF&pid=Api&P=0&w=290&h=182);
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	color: #72F072;
+}
+
+p {
+	font-family: Helvetica;
+}
+
+li {
+	font-family: Arial;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+table, td, tr,th {border: 1px solid royalblue;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+tr, td {
+	background-color: #96D4D4
+}
+
+footer {
+	text-align: right;
+	
+}

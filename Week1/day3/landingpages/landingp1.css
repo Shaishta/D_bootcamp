@@ -1,0 +1,92 @@
+
+body {
+	background: url('https://www.freevector.com/uploads/vector/preview/6948/FreeVector-World-Map-Dots-Vector.jpg');
+	background-size: 100%, 100%;
+	font-family: Arial;
+}
+h1 {
+	font-family: Arial;
+	text-align: center;
+
+}
+
+.outer-div {
+	height: 50vh;
+	display: flex;
+	/* row, row reverse, column, column-reverse*/
+	flex-direction: row;
+	/* centre, flex-start, flex-end, space between, space around, space */
+	align-items: flex-start;
+
+	/* flex end, flex end, stretch,baseline*/
+}
+
+.inner-div {
+	color: slategrey;
+	border: 1px ;
+	padding: 30px;
+	text-align: center;
+	width: 50%;
+	
+
+}
+
+.box-1 {
+	display: flex;
+	
+	/*flex-grow: 1;*/
+	/*align-self: flex-start;*/
+	
+}
+.box-2 {
+	
+	/*align-self: stretch;*/
+	/*flex-grow: 1;*/
+	
+}
+.box-3 {
+	
+	/*align-self: center;*/
+	/*flex-grow: 2;*/
+	
+}
+.container {
+	grid-gap: 15px;
+	border: 2px ;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.num1 {	
+	width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  align-self: center;
+}
+.num2 {
+		width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+   background-color: whitesmoke;
+   align-self: flex-start;
+}
+.num3 {
+		width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+   background-color: whitesmoke;
+   align-self: center;
+	
+}
+img {
+	border-radius: 50%;
+	justify-content: center;
+}
+
+

@@ -1,0 +1,113 @@
+/*nav bar*/
+.container {
+  display: flex;
+  justify-content: center;
+
+ }
+ .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl .con2{
+    width: 100%;
+    /* padding-right: var(--bs-gutter-x,.75rem); */
+    /* padding-left: var(--bs-gutter-x,.75rem); */
+        
+}
+
+  header{ background-image: url(https://api-v3.twenty20.com/items/f8204d63-4fcc-4a6c-948d-16c51f43af03/images/item-share);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+  h1{
+    color: white;
+  font-size: 10vh;
+  text-align: center;
+  }
+
+  .navbar-light{
+    width: 100%;
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0;
+   padding-left: 0;}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: ; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  
+}
+/*about*/
+h2 {
+  text-align: center;
+  color: skyblue;
+}
+
+h6 {
+   text-align: left;
+}
+
+.container1 img {
+  border-radius: 60%;
+}
+/*portfolio*/
+.section min-vh-100 {
+  display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*about*/
+.card h-100 {
+  max-width: 0;
+}
+
+/*team*/
+figure {
+ margin: 20px;
+
+}
+
+.social {
+  background-color: skyblue;
+}
+.div {
+  margin-top: 15px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fa-github , .fa-facebook , .fa-linkedin ,{
+    color: #003153;
+    background-color: #5f9ea0;
+    font-size: 70%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
