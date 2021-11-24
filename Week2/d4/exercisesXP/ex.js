@@ -263,9 +263,69 @@ for (item of list){
 
 
 
-//ex9 Vacations Costs
-// function hotelCost(){
+//ex9: vacations Costs
 
+// let nights = prompt(" how many nights will you be staying?");
+//  nights = Number(nights);
+//  console.log(nights);
+//  function hotelCost(){
+//  	if (nights==0 || nights == undefined){
+//  		prompt(" How many nights will you be staying?");
+//  	}
+//  	else{
+//  		let sum = nights*140;
+//  		console.log("$" + sum) ;
+ 			
+//  	}
+
+//  }
+// hotelCost()
+// let destination = prompt(" where is your destination?");
+// console.log(destination);
+// function planceRideCost(){
+// 	if (destination == "London"){
+// 		let sum = nights*183;
+// 		console.log("$" + sum);
+// 		return sum
+​
+// 	}
+// 	else if(destination == "Paris"){
+// 		let sum = nights*220;
+// 		console.log("$" + sum);
+// 		return sum
+// 	}
+// 	else if( destination == 0 || destination == undefined){
+// 		prompt(" where is your destination?");
+// 	}
+// 	else{
+// 		let sum = nights*300;
+// 		console.log("$" + sum);
+// 		return sum
+// 	}
+// }
+// planceRideCost()
+//  let carRent = prompt(" how long will you be here?");
+//  carRent = Number(carRent);
+//  console.log(carRent);
+//  function rentalCarCost(){
+
+//  	if(carRent>10){
+//  		let sum = carRent*20
+//  		console.log(sum);
+//  	}
+//  	else if(carRent>0 && carRent <= 10){
+//  		let sum = carRent*40;
+//  		console.log(sum);
+//  		return sum
+//  	}
+//  	else{
+//  		prompt(" how long will you be here?")
+//  	}
+//  }
+// rentalCarCost()
+
+// function totalVacationCost(hotelCost, planceRideCost , rentalCarCost){
+ 
 // }
 
 
