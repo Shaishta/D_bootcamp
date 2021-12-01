@@ -45,9 +45,9 @@
 
 -- select title from film; select film_id, title, description, length, rental_rate from film where title ilike 'ti%';
 
--- select title , rental_rate from film order by rental_rate ASC limit 15;
+-- select title , rental_rate from film order by rental_rate ASC limit 10;
 
--- select title , rental_rate from film order by rental_rate offset 15 rows fetch next 10 rows only;
+-- select title , rental_rate from film order by rental_rate offset 10 rows fetch next 10 rows only;
 
 -- select customer.customer_id, customer.first_name, payment.amount, payment.payment_date from customer inner join payment on payment.customer_id = customer.customer_id order by customer_id; select film.film_id, film.title, inventory.film_id from film inner join inventory on inventory.film_id = film.film_id;
 
