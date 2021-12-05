@@ -1,52 +1,64 @@
 #Exercise 1 : Restaurant Menu Manager
 import psycopg2
-
-HOSTNAME = 'localhost'
-USERNAME = 'postgres'
-PASSWORD = '5427'
-DATABASE = 'menu_manager'
-
-conn_string = "host='localhost' dbname='menu_manager' user='postgres' password='5427'"
-connection = psycopg2.connect(conn_string)
-cursor = connection.cursor()
+from tabulate import tabulate
 
 
 class MenuItem:
-    def __init__(self, name, price):
+    def __init__(self, name=None, price=None):
         self.name = name
         self.price = price
 
+    def __open_database(self):
+        HOSTNAME = 'localhost'
+        USERNAME = 'postgres'
+        PASSWORD = '5427'
+        DATABASE = 'menu_manager'
+        self.connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+        self.cursor = self.connect.cursor()
+
     def save(self):
-        save_items = f"insert into menu (item_name, price) values ('{self.name}', {self.price});"
-        cursor.execute(save_items)
-        connection.commit()
-        print('item successfully added.')
+        self.__open_database()
+        self.cursor.execute(f"insert into menu(name, price) values ('{self.name}', {self.price}) ")
+        self.connect.commit()
+        self.connect.close()
 
     def delete(self):
-        del_items = f"delete from menu where item_name = '{self.name}';"
-        cursor.execute(del_items)
-        connection.commit()
+        self.__open_database()
+        self.cursor.execute(f"delete from menu where name = '{self.name}'")
+        self.connect.commit()
+        self.connect.close()
 
-    def update(self, name, price):
-        update_items = f"update menu set item_name ='{name}', price = {price} where item_name = '{self.name}'"
-        cursor.execute(update_items)
-        connection.commit()
+    def update(self, other_name, other_price):
+        self.__open_database()
+        self.cursor.execute(f"update menu set price ={other_price}  where name = '{other_name}'")
+        self.connect.commit()
+        self.connect.close()
 
-    @staticmethod
-    def all():
-        query = "select * from menu;"
-        cursor.execute(query)
-        results = cursor.fetchall()
-        for item in results:
-            print(item)
+    def all(self):
+        self.__open_database()
+        self.cursor.execute("select * from menu")
+        self.connect.commit()
+        results = self.cursor.fetchall()
+        self.connect.close()
+        print(tabulate(results, headers=['id','Name', 'Price']))
 
-    @staticmethod
-    def get_by_name(name):
-        get_item_q = f"select item_name from menu where item_name = '{name}';"
-        cursor.execute(get_item_q)
-        result = cursor.fetchall()
-        if result:
-            for item in result:
-                return item
+    def get_by_name(self, item):
+        self.__open_database()
+        self.cursor.execute(f"(select * from menu where name ='{item}')")
+        item = self.cursor.fetchall()
+        if len(item) != 0:
+            self.connect.close()
+            print(tabulate(item, headers=['id', 'Name', 'Price']))
+            print( )
         else:
-            return None
+            return 'None'
+
+
+item = MenuItem('Burger', 35)
+item.save()
+item.delete()
+item.update('Salad', 37)
+item.get_by_name('Burger')
+item.all()
+items = MenuItem().all()
+items
